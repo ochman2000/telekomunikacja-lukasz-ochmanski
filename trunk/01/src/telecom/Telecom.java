@@ -100,6 +100,9 @@ public static void oblicz_R(int value, int bp)//bp bit parzystości
 //        Utils.conv(bytes);
 //        Utils.convRev(bytes);
         System.out.println(Utils.convertWithPad(bytes));
+        System.out.println("bit nr 2: "+Utils.getBitAt(bytes,6));
+//        int w = 
+//        oblicz_T()
         //int zamiana=Integer.parseInt(wejscie);
         //System.out.println(zamiana);
         //in = null ;
