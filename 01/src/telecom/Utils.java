@@ -45,4 +45,11 @@ public class Utils {
     	else
     		return 0;
     }
+    
+    public static int[] convert(String text)
+    {
+    	byte [] bajt = text.getBytes();
+    	
+    }
+    
 }
