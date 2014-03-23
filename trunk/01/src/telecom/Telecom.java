@@ -32,6 +32,7 @@ public static void oblicz_T(int value)
 	for( int m=0;m<M;m++)
 	{
 		T[m] = (value >> (M-m-1)) & 1;
+		System.out.println(Arrays.toString(T));
 	}
 }
 
@@ -101,7 +102,7 @@ public static void oblicz_R(int value, int bp)//bp bit parzystości
 //        Utils.convRev(bytes);
         System.out.println(Utils.convertWithPad(bytes));
         System.out.println("bit nr 2: "+Utils.getBitAt(bytes,6));
-//        int w = 
+//      
 //        oblicz_T()
         //int zamiana=Integer.parseInt(wejscie);
         //System.out.println(zamiana);
@@ -121,6 +122,9 @@ public static void oblicz_R(int value, int bp)//bp bit parzystości
         // int y=Integer.valueOf(znak);
         // System.out.println(y);
         //oblicz_T(y);
+        int[] test= { 0,1,1,0,0,0,0,1};
+        
+        oblicz_T(97);
     } catch (UnsupportedEncodingException ex) {
         Logger.getLogger(Telecom.class.getName()).log(Level.SEVERE, null, ex);
     }
