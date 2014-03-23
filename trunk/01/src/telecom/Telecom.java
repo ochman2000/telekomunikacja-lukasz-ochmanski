@@ -97,8 +97,9 @@ public static void oblicz_R(int value, int bp)//bp bit parzystości
     try {
         byte[] bytes = wejscie.getBytes("US-ASCII");
         System.out.println(Arrays.toString(bytes));
-        Utils.conv(bytes);
-        Utils.convRev(bytes);
+//        Utils.conv(bytes);
+//        Utils.convRev(bytes);
+        System.out.println(Utils.convertWithPad(bytes));
         //int zamiana=Integer.parseInt(wejscie);
         //System.out.println(zamiana);
         //in = null ;
