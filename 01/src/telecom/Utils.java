@@ -16,15 +16,7 @@ import java.util.Arrays;
  */
 public class Utils {
 
-//    public static String conv(byte[] nazwa)
-//    {
-//        BigInteger bi=new BigInteger(nazwa);
-//        String binarka = bi.toString(2);
-//        System.out.println(binarka);
-//        return binarka;
-//       
-//    }
-    
+     
     public static String convertWithPad(byte[] nazwa) {
     	String binarka = "";
         for (int i=0; i<nazwa.length; i++) {
@@ -44,28 +36,13 @@ public class Utils {
 		binarka = binarka.substring(binarka.length()-8, binarka.length());
         return binarka;
 	}
-
-//	public static String convRev(byte[] nazwa)
-//    {
-//       String zle = conv(nazwa);
-//       String binarka = "";
-//        for(int i=0;i<zle.length();i+=8) {
-//            binarka+=revert(zle.substring(i, i+8-1));
-//            binarka+=" ";
-//        }
-//        
-//      
-//        System.out.println(binarka);
-//        return binarka;
-//    }
-//    
-//    private static String revert(String s)
-//    {
-//        String out="";
-//        for(int i =0; i<s.length();i++)
-//        {
-//            out+=s.charAt(s.length()-i-1);
-//        }
-//        return out;
-//    }
+    
+    public static int getBitAt(byte[] b, int index) {
+    	BigInteger bi = new BigInteger(b);
+    	boolean bit = bi.testBit(index);
+    	if (bit==true)
+    		return 1;
+    	else
+    		return 0;
+    }
 }
